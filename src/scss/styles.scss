@@ -1,0 +1,23 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap";
+.nav-link-hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-link-hover:hover {
+    color: rgb(255, 48, 48);       
+}
+.card-title{
+    color: rgb(255, 48, 48);
+}
+.bg-dark{
+    color: #000000;
+    background-color: #000000;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
