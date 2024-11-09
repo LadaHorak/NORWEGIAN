@@ -7,18 +7,43 @@
     <title>PANOPTIKO-koncerty</title>
     <script type="module" src="./js/main.js"></script>
 </head>
-<body>
+
+<body class="bg-dark">
+
     <div class="container">
         <nav class="">
+           
             <div class="container-fluid d-flex justify-content-center">
-                <a class="navbar-brand m-3 " href="index.html">Kapela</a>
-                <a class="navbar-brand m-3 " href="Koncerty.html"><b>Koncerty</b></a>
-                <a class="navbar-brand m-3 " href="Diskografie.html">Diskografie</a>
-                <a class="navbar-brand m-3 " href="Galerie.html">Galerie</a>
-                <a class="navbar-brand m-3 " href="Kontakt.html">Kontakt</a>
-                <a class="navbar-brand m-3 " href="Biografie.html">Biografie</a>
-            </div>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="index.html">Kapela</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="Koncerty.html"><b>Koncerty</b></a>
+                <a class="navbar-brand m-3 pt-2 pe-1 nav-link-hover" href="Diskografie.html">Diskografie</a>
+                <a class="logo mt-3 d-flex justify-content-center" href="#"><img src="images/Logo.png" alt="logo"
+                    height="50px"></a>
+                <a class="navbar-brand m-3 pt-2 ps-1 nav-link-hover" href="Galerie.html">Galerie</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="Kontakt.html">Kontakt</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="Biografie.html">Biografie</a>
         </nav>
 
+        <div class="koncerty">
+            <div class="text-center">
+                <p id="date" class=""></p>
+            </div>
+        </div>
+
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function updateDate() {
+        const now = new Date();
+        const day = String(now.getDate()).padStart(2, '0');
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        document.getElementById('date').textContent = `${day}.${month}`;
+    }
+
+    updateDate();
+</script>
 </body>
