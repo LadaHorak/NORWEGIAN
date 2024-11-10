@@ -21,6 +21,77 @@ body{
 b{
     color: rgb(255, 59, 59);
 }
+.social-hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-hover:hover {
+    color: rgb(255, 59, 59);       
+}
+
+strong{
+    color: rgb(255, 214, 129);
+}
+
+@media (max-width: 768px) {
+    ul {
+        list-style-type: none; 
+        padding-left: 0; 
+    }
+}
+
+.album-cover {
+    margin-right: -30px;
+    width: 285px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: auto; 
+    max-height: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; 
+}
 
 
+.gallery img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
 
+
+.gallery .item {
+    width: calc(33.33% - 20px); 
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .gallery .item {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .item {
+        width: 100%;
+    }
+}
+
+.date-publ{
+    margin-bottom: -2px;
+}
