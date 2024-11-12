@@ -104,3 +104,56 @@ html, body {
     height: 100%;
 }
 
+.kontakt{
+    min-height: auto;
+}
+.vstupenka{
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: rgb(255, 59, 59); 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    text-align: center;
+    width: 200px;
+}
+.des img{
+    padding-top: -20px;
+   width: 250px;
+}
+
+.desi img{
+    padding-top: -50px;
+   width: 200px;
+}
+
+.desig img{
+    width: 200px;
+    rotate: 180deg;
+}
+
+.con {
+    top: 0;
+    left: 50%;                       
+    transform: translateX(-50%);      
+    width: 50vw;                      
+    height: 100vh;                    
+    z-index: -1;                      
+    background-image: url(../images/logo-mod.svg);
+    background-repeat: no-repeat;
+    background-size: cover;           
+    background-position: center;      
+    position: fixed;                  
+}
+
+a {
+    text-decoration: none;
+}
+label{
+    color: rgb(255, 214, 129);
+}
+input, textarea{
+    background-color: #000000;
+    color: white;
+}

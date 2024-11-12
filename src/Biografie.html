@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PANOPTIKO</title>
     <script type="module" src="./js/main.js"></script>
+    <link rel="icon" href="images/logo-mod.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-dark">
 
     <div class="container">
-        <nav class="">
+        <nav class="pt-2">
 
             <div class="container-fluid d-flex justify-content-center">
                 <a class="navbar-brand m-3 pt-2 nav-link-hover" href="index.html">Kapela</a>
@@ -94,7 +96,9 @@
                     </svg>
                 </a>
     
-    
+                <a class="text-decoration-none social-hover mx-2" style="padding-right: 15px; padding-left: 30px"
+                href="#">
+                <img src="images/logo-mod.png" height="60px"></a>
                 <a class="text-decoration-none social-hover mx-2" style="padding-right: 30px; padding-left: 15px"
                     href="https://open.spotify.com/artist/0I8yXVKqdcYPxLGMK7hZot">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-spotify"
@@ -113,5 +117,10 @@
                     </svg>
                 </a>
             </div>
+            <p class="text-center text-white pt-2 pb-2">Všechna práva oprávněna — Ladislav Horák 2024</p>
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
