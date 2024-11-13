@@ -141,7 +141,7 @@ html, body {
     top: 0;
     left: 50%;                       
     transform: translateX(-50%);      
-    width: 50vw;                      
+    width: 36vw;                      
     height: 100vh;                    
     z-index: -1;                      
     background-image: url(../images/logo-mod.svg);
@@ -176,18 +176,19 @@ input, textarea{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
 }
-.bg-dark, .navbar-dark, .navbar, .text-bg-dark{
+.bg-dark, .text-bg-dark{
     background-color: #040300 !important;
 }
 .text-bg-dark{
-    width: 30vw;                      
-    height: 100vh; 
+   
     background-color: #060502 !important;
-    background-image: url(../images/logo-mod.svg);
+    background-image: url(../images/logo-mod1.svg);
     background-repeat: no-repeat;
     background-size: cover;           
     background-position: center;      
     position: fixed;  
+    width: 10vw;                      
+    height: 100vh;
 }
 
 .offcanvas-title{
@@ -204,4 +205,7 @@ ul {
 
 li {
     text-decoration: none;
+}
+.card{
+    background-color: transparent !important;
 }
