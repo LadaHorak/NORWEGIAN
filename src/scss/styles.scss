@@ -1,4 +1,5 @@
 // Import all of Bootstrap's CSS
+
 @import "bootstrap";
 .nav-link-hover {
     color: white;
@@ -156,4 +157,19 @@ label{
 input, textarea{
     background-color: #000000;
     color: white;
+}
+.navbar-toggler{
+    margin-top: -70px;
+}
+.navbut{
+    color: rgb(255, 59, 59);
+}
+.galleryimg {
+    width: 50px;
+    height: auto;
+    max-width: 33%; 
+    max-height: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
 }

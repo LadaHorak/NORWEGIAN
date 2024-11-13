@@ -16,14 +16,48 @@
         <nav class="pt-2">
 
             <div class="container-fluid d-flex justify-content-center">
-                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="index.html">Kapela</a>
-                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="Koncerty.html"><b>Koncerty</b></a>
-                <a class="navbar-brand m-3 pt-2 pe-1 nav-link-hover" href="Diskografie.html">Diskografie</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="index.html">Kapela</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="Koncerty.html"><b>Koncerty</b></a>
+                <a class="navbar-brand m-3 pe-1 pt-2 nav-link-hover d-none d-lg-block"
+                    href="Diskografie.html">Diskografie</a>
                 <a class="logo mt-3 d-flex justify-content-center" href="#"><img src="images/Logo.png" alt="logo"
                         height="50px"></a>
-                <a class="navbar-brand m-3 pt-2 ps-1 nav-link-hover" href="Galerie.html">Galerie</a>
-                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="Kontakt.html">Kontakt</a>
-                <a class="navbar-brand m-3 pt-2 nav-link-hover" href="Biografie.html">Biografie</a>
+                <a class="navbar-brand m-3 ps-1 pt-2 nav-link-hover d-none d-lg-block" href="Galerie.html">Galerie</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="Kontakt.html">Kontakt</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="Biografie.html">Biografie</a>
+            </div>
+        </nav>
+
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+                <button class="navbut navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><b>PANOPTIKO</b></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="container-fluid d-flex flex-column align-items-center mt-3">
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="index.html">Kapela</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Koncerty.html"><b>Koncerty</b></a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Diskografie.html">Diskografie</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Galerie.html">Galerie</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Kontakt.html">Kontakt</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Biografie.html">Biografie</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
         </nav>
         
         <div class="koncerty">
