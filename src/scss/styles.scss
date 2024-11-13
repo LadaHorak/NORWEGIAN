@@ -1,5 +1,8 @@
 // Import all of Bootstrap's CSS
-
+.bg-dark{
+    background-color: #000000;
+    color: #000000;
+}
 @import "bootstrap";
 .nav-link-hover {
     color: white;
@@ -172,4 +175,33 @@ input, textarea{
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
+}
+.bg-dark, .navbar-dark, .navbar, .text-bg-dark{
+    background-color: #040300 !important;
+}
+.text-bg-dark{
+    width: 30vw;                      
+    height: 100vh; 
+    background-color: #060502 !important;
+    background-image: url(../images/logo-mod.svg);
+    background-repeat: no-repeat;
+    background-size: cover;           
+    background-position: center;      
+    position: fixed;  
+}
+
+.offcanvas-title{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: -10px; 
+
+}
+
+li {
+    text-decoration: none;
 }
