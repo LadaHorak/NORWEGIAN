@@ -1,47 +1,52 @@
 // Import all of Bootstrap's CSS
-.bg-dark{
-    background-color: #000000;
-    color: #000000;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+VIC:wght@100..400&family=Squada+One&family=Teko:wght@300..700&display=swap');
+
+
 @import "bootstrap";
+
 .nav-link-hover {
     color: white;
     transition: color 0.3s ease;
 }
 
 .nav-link-hover:hover {
-    color: rgb(255, 217, 129);       
+    color: rgb(255, 217, 129);
 }
-.card-title{
+
+.card-title {
     color: rgb(255, 59, 59);
 }
-.bg-dark{
+
+.bg-dark {
     color: #000000;
     background-color: #000000;
 }
-body{
-    overflow-x: hidden;
+
+body {
+    overflow-x: hidden !important;
 }
-b{
+
+b {
     color: rgb(255, 59, 59);
 }
+
 .social-hover {
     color: white;
     transition: color 0.3s ease;
 }
 
 .social-hover:hover {
-    color: rgb(255, 59, 59);       
+    color: rgb(255, 59, 59);
 }
 
-strong{
+strong {
     color: rgb(255, 214, 129);
 }
 
 @media (max-width: 768px) {
     ul {
-        list-style-type: none; 
-        padding-left: 0; 
+        list-style-type: none;
+        padding-left: 0;
     }
 }
 
@@ -64,29 +69,29 @@ strong{
 .gallery img {
     width: 100%;
     height: auto;
-    max-width: auto; 
+    max-width: auto;
     max-height: 250px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 
 .gallery img:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
 .gallery .item {
-    width: calc(33.33% - 20px); 
+    width: calc(33.33% - 20px);
     position: relative;
 }
 
 
 @media (max-width: 768px) {
     .gallery .item {
-        width: calc(50% - 20px); 
+        width: calc(50% - 20px);
     }
 }
 
@@ -96,102 +101,150 @@ strong{
     }
 }
 
-.date-publ{
+.date-publ {
     margin-bottom: -2px;
 }
+
 .grey {
     color: rgb(197, 174, 127);
     font-style: italic;
     font-size: 14px;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
 
-.kontakt{
+.kontakt {
     min-height: auto;
 }
-.vstupenka{
-    display: inline-block; 
-    padding: 10px 20px; 
-    background-color: rgb(255, 59, 59); 
-    color: white; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-size: 16px; 
+
+.vstupenka {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 59, 59);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
     text-align: center;
     width: 200px;
 }
-.des img{
+
+.diskograf {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #040300;
+    color: rgb(30, 215, 96);
+    border: 2px solid rgb(30, 215, 96);
+    border-radius: 10%;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+}
+
+.des img {
     padding-top: -20px;
-   width: 250px;
+    width: 250px;
 }
 
-.desi img{
+.desi img {
     padding-top: -50px;
-   width: 200px;
+    width: 200px;
 }
 
-.desig img{
+.desig img {
     width: 200px;
     rotate: 180deg;
 }
 
 .con {
     top: 0;
-    left: 50%;                       
-    transform: translateX(-50%);      
-    width: 36vw;                      
-    height: 100vh;                    
-    z-index: -1;                      
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36vw;
+    height: 100vh;
+    z-index: -1;
     background-image: url(../images/logo-mod.svg);
     background-repeat: no-repeat;
-    background-size: cover;           
-    background-position: center;      
-    position: fixed;                  
+    background-size: cover;
+    background-position: center;
+    position: fixed;
 }
 
 a {
     text-decoration: none;
 }
-label{
-    color: rgb(255, 214, 129);
+
+label {
+    color: #040300 !important;
 }
-input, textarea{
-    background-color: #000000;
-    color: white;
+
+input,
+textarea {
+    width: 300px !important;
+    background-color: #000000 !important;
+    color: rgb(255, 217, 129) !important;
+    border: 1px solid rgb(197, 174, 127) !important;
 }
-.navbar-toggler{
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(197, 174, 127) !important;
+}
+
+.navbar-toggler {
     margin-top: -70px;
 }
-.navbut{
+
+.navbut {
+    color: rgb(255, 59, 59) !important;
+    border-color: rgb(255, 59, 59) !important
+}
+
+button.btn-primary {
+    background-color: rgb(255, 59, 59);
+    border: none;
+}
+.navbar-toggler-icon{
     color: rgb(255, 59, 59);
 }
+
+button.btn-primary:hover {
+    background-color: rgb(200, 40, 40);
+}
+
 .galleryimg {
     width: 50px;
     height: auto;
-    max-width: 33%; 
+    max-width: 33%;
     max-height: 500px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
 }
-.bg-dark, .text-bg-dark{
+
+.bg-dark,
+.text-bg-dark {
     background-color: #040300 !important;
 }
-.text-bg-dark{
-   
+
+.text-bg-dark {
+
     background-color: #060502 !important;
     background-image: url(../images/logo-mod1.svg);
     background-repeat: no-repeat;
-    background-size: cover;           
-    background-position: center;      
-    position: fixed;  
-    width: 10vw;                      
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 10vw;
     height: 100vh;
 }
 
-.offcanvas-title{
+.offcanvas-title {
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -199,13 +252,42 @@ input, textarea{
 ul {
     list-style-type: none;
     padding-left: 10px;
-    margin-top: -10px; 
+    margin-top: -10px;
 
 }
 
 li {
     text-decoration: none;
 }
-.card{
+
+.card {
     background-color: transparent !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+nav {
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+.obraz {
+    width: 100%; /* Šířka bude přizpůsobena rodičovskému prvku */
+    aspect-ratio: 4 / 5; /* Nastaví poměr stran 2:1 (stejně jako 600 x 300) */
+    object-fit: cover; /* Zajistí, že se obrázek přizpůsobí bez deformace */
+    max-width: 400px;
 }
