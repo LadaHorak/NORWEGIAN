@@ -286,8 +286,72 @@ h5 {
 }
 
 .obraz {
-    width: 100%; /* Šířka bude přizpůsobena rodičovskému prvku */
-    aspect-ratio: 4 / 5; /* Nastaví poměr stran 2:1 (stejně jako 600 x 300) */
-    object-fit: cover; /* Zajistí, že se obrázek přizpůsobí bez deformace */
+    width: 100%; 
+    aspect-ratio: 4 / 5; 
+    object-fit: cover; 
     max-width: 400px;
+}
+
+.card-img-top{
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.card-text-{
+    color: white !important;
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.ribbon {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background-color: rgb(30, 215, 96); 
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ribbon-lidovka {
+    color: rgb(255, 255, 255);
+}
+
+.ribbon-zlevneno {
+    background-color: rgb(255, 59, 59); 
+}
+
+
+.star-rating {
+    font-size: 20px;
+    color: rgb(255, 214, 129); 
+}
+
+.filters-sort {
+    background-color: #060502;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.filters-sort h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: rgb(255, 59, 59)
+
+}
+
+.filters-sort .form-label {
+    font-size: 14px;
+    font-weight: bold;
+    
 }
