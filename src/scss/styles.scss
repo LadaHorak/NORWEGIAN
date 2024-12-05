@@ -372,10 +372,18 @@ option{
 }
 
 .carousel-item{
-    width: 100%;
-    object-fit: cover;
+   object-fit: cover; 
+    max-width: 400px;
 }
 
 .prjodukt{
     color: rgb(255, 214, 129)!important;
+}
+
+.prjodukt p, ul{
+    color: white;
+}
+.text-prise{
+    font-weight: bold;
+    color: rgb(255, 59, 59)
 }
