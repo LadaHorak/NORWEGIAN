@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PANOPTIKO</title>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="images/logo-mod.png" type="image/x-icon">
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <nav class="pt-2">
+            <section class="con"> </section>
+            <div class="container-fluid d-flex justify-content-center">
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="index.html">Kapela</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="Koncerty.html">Koncerty</a>
+                <a class="navbar-brand m-3 pe-1 pt-2 nav-link-hover d-none d-lg-block"
+                    href="Diskografie.html">Diskografie</a>
+                <a class="logo mt-3 d-flex justify-content-center" href="#"><img src="images/Logo.png" alt="logo"
+                        height="50px"></a>
+                <a class="navbar-brand m-3 ps-1 pt-2 nav-link-hover d-none d-lg-block" href="Galerie.html">Galerie</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="Kontakt.html">Kontakt</a>
+                <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="Biografie.html">Biografie</a>
+            </div>
+        </nav>
+
+        <nav class="navbar  ">
+            <div class="container-fluid">
+                <button class="navbut navbar-toggler d-lg-none d-block" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><b>PANOPTIKO</b></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="container-fluid d-flex flex-column align-items-center mt-3">
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="index.html">Kapela</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Koncerty.html">Koncerty</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Diskografie.html">Diskografie</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Galerie.html">Galerie</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Kontakt.html">Kontakt</a>
+                            <a class="navbar-brand m-2 pt-2 nav-link-hover" href="Biografie.html">Biografie</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5">
+            <div class="row">
+             
+                <div class="col-md-6">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/sp-pr1.jpg" class="d-block w-100" alt="Produkt 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sp-pr2.jpg" class="d-block w-100" alt="Produkt 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Předchozí</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Další</span>
+                        </button>
+                    </div>
+                </div>
+    
+               
+                <div class="col-md-6 prjodukt">
+                    <h1 class="display-6">TRIKO pánské - RED</h1>
+                    <p class="text-danger fs-4">450,00 Kč</p>
+                    <p>Pánské triko PANOPTIKO - RED - barva černá</p>
+                    <ul>
+                        <li>185 g/m²</li>
+                        <li>100% předepraná bavlna Jersey</li>
+                        <li>Bez švů</li>
+                        <li>Vyztužná páska za krkem a ramenou</li>
+                        <li>Dvojité prošité rukávy a dolní lem</li>
+                    </ul>
+    
+                
+             
+                    <div class="mb-3">
+                        <label for="sizeSelect" class="form-label">Vyberte velikost:</label>
+                        <select id="sizeSelect" class="form-select">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                            <option value="3XL">3XL</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-danger me-2">Vložit do košíku</button>
+                    <button class="btn btn-outline-secondary">Zobrazit košík</button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    </div>
+</body>

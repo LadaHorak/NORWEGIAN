@@ -334,24 +334,48 @@ h5 {
     color: rgb(255, 214, 129); 
 }
 
-.filters-sort {
-    background-color: #060502;
+.filters-okenko {
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;  
     margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
+    color: rgb(255, 255, 255)  ;
+    border: 1px solid rgb(255, 214, 129)  ;
+    box-shadow: 0 4px 8px rgba(255, 214, 129, 0.2);  
 }
 
-.filters-sort h5 {
+
+.filters-okenko h5 {
     margin-bottom: 15px;
     font-weight: bold;
     color: rgb(255, 59, 59)
 
 }
 
-.filters-sort .form-label {
+.filters-okenko .form-label {
     font-size: 14px;
     font-weight: bold;
+    color: rgb(255, 214, 129)!important;
+    background-color: #060502 !important; 
     
+}
+label{
+    color: rgb(255, 214, 129)!important; 
+}
+option{
+    background-color: #060502 !important;
+    color: rgb(255, 214, 129)!important;
+}
+
+.form-select{
+    background-color: #060502 !important;
+    color: rgb(255, 214, 129)!important;
+}
+
+.carousel-item{
+    width: 100%;
+    object-fit: cover;
+}
+
+.prjodukt{
+    color: rgb(255, 214, 129)!important;
 }
