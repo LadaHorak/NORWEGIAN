@@ -371,10 +371,12 @@ option{
     color: rgb(255, 214, 129)!important;
 }
 
-.carousel-item{
-   object-fit: cover; 
-    max-width: 400px;
-}
+.carousel-item {
+    object-fit: cover; 
+    width: 100%;       
+    height: 600px;     
+    overflow: hidden;  
+ }
 
 .prjodukt{
     color: rgb(255, 214, 129)!important;
@@ -386,4 +388,53 @@ option{
 .text-prise{
     font-weight: bold;
     color: rgb(255, 59, 59)
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    height: 450px; 
+    width: 200px;
+}
+
+.produkt-detail {
+    color: #fff; 
+}
+
+.text-price {
+    font-size: 1.5rem;
+    color: #e63946;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem; 
+}
+
+.btn-danger {
+    background-color: #e63946;
+    border: none;
+}
+
+.btn-outline-secondary {
+    color: #e63946;
+    border-color: #e63946;
+}
+
+h6{
+    color:  rgb(255, 214, 129);
+}
+
+.text-muted{
+    color: #e63946 !important;
+}
+
+.kosikimg{
+    object-fit: cover; 
+    height: 75px; 
+    width: 75px;
 }
