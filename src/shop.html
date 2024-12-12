@@ -13,7 +13,7 @@
 <body class="bg-dark">
     <div class="container">
         <nav class="pt-2">
-            <section class="con"> </section>
+            <section class="con pt-5 mt-5"> </section>
             <div class="container-fluid d-flex justify-content-center">
                 <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="shop.html">Shop</a>
                 <a class="navbar-brand m-3 pt-2 nav-link-hover d-none d-lg-block" href="index.html">Kapela</a>
@@ -62,6 +62,11 @@
 
                             </div>
                         </li>
+                        <a href="kosik.html" class="btn btn-outline-secondary"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg> Zobrazit košík</a>
                     </ul>
                 </div>
             </div>
@@ -101,20 +106,22 @@
             <div class="container my-4">
                 <div class="row">
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 formík">
                         <h5>Filtrace a Řazení</h5>
                         <form>
 
-                            <div class="mb-2">
-                                <label for="priceRange" class="form-label">Cena (Kč):</label>
-                                <input type="text" id="priceRange" class="form-control" placeholder="Např. 200-500">
+                            <div class="mb-3">
+                                <label for="priceRange" class="form-label">Cena:</label>
+                               <div> <input type="range" class="form-range me-2" id="priceRange" min="399" max="35598" step="1" style="width: 40px;"></div>
+                                <div class="d-flex align-items-center ceník" style="width: 20px;"> 
+                                    <input type="text" id="priceMin" class="form-control text-center me-1" value="100" style="width: 20px;">
+                                    <input type="text" id="priceMax" class="form-control text-center ms-1" value="1000" style="width: 20px;">
+                                </div>
                             </div>
+                            
 
 
-                            <div class="mb-2 skladem" style="display: flex; align-items: center;">
-                                <input type="checkbox" id="inStock" name="availability">
-                                <label for="inStock">Skladem</label>
-                            </div>
+                          
 
                             <div class="mb-2">
                                 <label class="form-label">Kategorie:</label>
@@ -124,6 +131,43 @@
                                     <option value="zlevnene">Zlevněné</option>
                                     <option value="nejprodavanejsi">Nejprodávanější</option>
                                 </select>
+
+                                <label class="form-label">Barva:</label>
+                                <select class="form-select">
+                                    <option value="">červená</option>
+                                    <option value="novinky">šedá</option>
+                                    <option value="zlevnene">černá</option>
+                                    <option value="nejprodavanejsi">bílá</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Hodnocení:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating5" value="5">
+                                    <label class="form-check-label" for="rating5">5+ hvězdiček</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating4" value="4">
+                                    <label class="form-check-label" for="rating4">4+ hvězdičky</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating3" value="3">
+                                    <label class="form-check-label" for="rating3">3+ hvězdičky</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating2" value="2">
+                                    <label class="form-check-label" for="rating2">2+ hvězdičky</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="rating" id="rating1" value="1">
+                                    <label class="form-check-label" for="rating1">1+ hvězdička</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="mb-2 skladem" style="display: flex; align-items: center;">
+                                <input type="checkbox" id="inStock" name="availability">
+                                <label for="inStock">Skladem</label>
                             </div>
 
                         </form>
@@ -131,6 +175,7 @@
 
                     <div class="col-12 col-md-6">
                         <form>
+                            <h5>ŘAZENÍ</h5>
                             <div class="mb-2">
                                 <label for="sortBy" class="form-label">Seřadit podle:</label>
                                 <select id="sortBy" class="form-select">
@@ -142,16 +187,7 @@
                                 </select>
                             </div>
                         </form>
-                        <div class="mb-2">
-                            <label class="form-label">Hodnocení:</label>
-                            <select class="form-select">
-                                <option value="5star">5+ hvězdiček</option>
-                                <option value="5star">4+ hvězdiček</option>
-                                <option value="5star">3+ hvězdiček</option>
-                                <option value="5star">2+ hvězdiček</option>
-                                <option value="5star">1+ hvězdiček</option>
-                            </select>
-                        </div>
+                        
                         <div class="mb-2">
                             <label for="searchKeyword" class="form-label">Hledat:</label>
                             <input type="text" id="searchKeyword" class="form-control"
@@ -315,7 +351,44 @@
                         <div class="card">
                             <img src="images/shop12.jpg" class="card-img-top" alt="shop12">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Triko dámské – SMRTKA</h5>
+                                <h5 class="card-title"> Triko dámské – SMRTKA</h5>
+                                <div class="mt-auto">
+                                    <p class="price"><strong>499 Kč</strong></p>
+                                    <div class="star-rating">★★★★☆</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card position-relative">
+                            <img src="images/shop13.jpg" class="card-img-top" alt="shop10">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">CD – BOHOVÉ"</h5>
+                                <div class="mt-auto">
+                                    <p class="price"><strong>550 Kč</strong></p>
+                                    <div class="star-rating">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card position-relative">
+                            <img src="images/shop14.jpg" class="card-img-top" alt="shop11">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">CD – POSLEDNÍ TANGO</h5>
+                                <div class="mt-auto">
+                                    <p class="price"><strong>499 Kč</strong></p>
+                                    <div class="star-rating">★★★★☆</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="images/shop15.jpg" class="card-img-top" alt="shop12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Náramek – SMRTKA</h5>
                                 <div class="mt-auto">
                                     <p class="price"><strong>499 Kč</strong></p>
                                     <div class="star-rating">★★★★☆</div>
@@ -378,6 +451,16 @@
         </div>
         <p class="text-center text-white pt-2 pb-2">Všechna práva vyhrazena — Ladislav Horák 2024</p>
     </footer>
+    <script>
+        document.getElementById('priceRange').addEventListener('input', function (e) {
+    const min = this.min;
+    const max = this.max;
+    const value = this.value;
+
+    document.getElementById('priceMin').value = min;
+    document.getElementById('priceMax').value = max;
+});
+    </script>
 </body>
 
 </html>

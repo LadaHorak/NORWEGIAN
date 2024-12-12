@@ -453,3 +453,45 @@ strong{
 }.skladem input{
     width: 20px !important;
 }
+
+.card-body{
+    border: 2px solid #e63946;
+    max-width: 350px;
+}
+.form-check input{
+    width: 15px !important;
+}
+.form-label select{
+    width: 50px;
+}
+
+.form-range {
+    flex: 1 !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.ceník input, textarea{
+    max-width: 145px !important;
+}
+
+.form-range{
+    max-width: 800px!important;
+}
+.product-description h5, h2{
+    color: rgb(255, 214, 129);
+}
+.velikost{
+    max-width: 350px;
+}
+
+.produkt-detail b{
+    color: rgb(255, 214, 129);
+}
+
+.mb-2 .form-select{
+ max-width: 400px;
+}
+.formík{
+    max-width: 800px ;
+}
