@@ -10,39 +10,46 @@
 </head>
 
 <body>
-    <section class="container">
-        <nav>
-            <section class="navbar display-flex align-items-center">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/NORwegian.png" alt="Logo" style="height: 75px;">
-                    </a>
-                </div>
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="electricguitars.html">Electric guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="bassguitars.html">Bass guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="custom.html" aria-disabled="true">Custom guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.html" aria-disabled="true">Cart <i class="bi bi-cart"></i></a>
-                    </li>
-                </ul>
-            </section>
-        </nav>
-    </section>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/NORwegian.png" alt="Logo" style="height: 75px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="color: white; border-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <section class="container">
+                <div class="collapse navbar-collapse nav nav-underline" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="electricguitars.html">Electric guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bassguitars.html">Bass guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="custom.html" aria-disabled="true">Costum guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cart.html" aria-disabled="true">C<i>a</i>rt <i
+                                    class="bi bi-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container ">
         <section class="delivery-details">
             <div class="container my-5">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center steps-container">
                     <div class="d-flex align-items-center">
                         <div class="step step-inactive">1</div>
                         <a href="cart.html">
@@ -75,7 +82,6 @@
                     </div>
                 </div>
 
-                <!-- Delivery Form -->
                 <h2 class="my-4">Enter Your Delivery Details</h2>
                 <form action="#" method="POST">
                     <div class="row">
@@ -117,15 +123,21 @@
 
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <a href="Shipping&Payment.html" class="discount-link pt-2">
-                                <i class="bi bi-arrow-left-circle"></i> Back to Shipping & Payment
+                            <a href="#" class="discount-link pt-2">
+                                <i class="bi bi-arrow-right-circle"></i> Use Discount / Gift Voucher
                             </a>
+                            <div class="back-button pt-4">
+                                <button type="button" class="btn btn-light">
+                                    <i class="bi bi-arrow-left"></i> Back to Shopping
+                                </button>
+                            </div>
                         </div>
 
-                        <div class="text-end">
-                            <a href="OrderSummary.html">
-                                <button type="submit" class="btn btn-success mt-2">Continue to Order Summary &rarr;</button>
-                            </a>
+                        <div class="text-end pt-2 pb-3">
+                            <p class="mb-0">Total without VAT: <strong>1784 €</strong></p>
+                            <h4 class="text-success mb-0">To Pay with VAT: 1900 €</h4>
+                            <a href="Shipping&Payment.html"><button type="button" class="btn btn-success mt-2">Continue
+                                    &rarr;</button></a>
                         </div>
                     </div>
                 </form>

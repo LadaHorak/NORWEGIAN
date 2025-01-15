@@ -11,39 +11,46 @@
 </head>
 
 <body>
-    <section class="container">
-        <nav>
-            <section class="navbar display-flex align-items-center">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/NORwegian.png" alt="Logo" style="height: 75px;">
-                    </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/NORwegian.png" alt="Logo" style="height: 75px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="color: white; border-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse nav nav-underline" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="electricguitars.html">Electric guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bassguitars.html">Bass guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="custom.html" aria-disabled="true">Costum guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cart.html" aria-disabled="true">C<i>a</i>rt <i
+                                    class="bi bi-cart"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="electricguitars.html">Electric guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="bassguitars.html">Bass guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="custom.html" aria-disabled="true">Costum guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.html">C<i>a</i>rt <i class="bi bi-cart"></i></a>
-                    </li>
-                </ul>
-            </section>
+            </div>
         </nav>
-    </section>
+    </header>
 
     <section class="container">
         <section class="order-summary">
             <div class="container my-5">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center steps-container">
                     <div class="d-flex align-items-center">
                         <div class="step step-inactive">1</div>
                         <a href="cart.html">
@@ -104,8 +111,8 @@
                     </div>
 
                     <div class="d-flex justify-content-between mt-3">
-                        <p><strong>Total without VAT:</strong> €984</p>
-                        <h4 class="text-success"><strong>Total with VAT:</strong> €1200</h4>
+                        <p><strong>Total without VAT:</strong> €1784</p>
+                        <h4 class="text-success"><strong>Total with VAT:</strong> €1900</h4>
                     </div>
 
                     <div class="text-end mt-4">
