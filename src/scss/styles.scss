@@ -500,6 +500,42 @@ footer:hover .line {
     margin: 0 5px;
 }
 
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px; 
+    }
+
+    .step {
+        width: 30px; 
+        height: 30px;
+        font-size: 14px; 
+    }
+
+    .step-line {
+        width: 90%; 
+        height: 2px; 
+        margin: 5px 0; 
+    }
+
+    .step-title {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .step {
+        width: 25px; 
+        height: 25px;
+        font-size: 12px; 
+    }
+
+    .step-title {
+        font-size: 12px; 
+    }
+}
+
 .cartimg {
     border-radius: 8px;
     padding: 10px;
