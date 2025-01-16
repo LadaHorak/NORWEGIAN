@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Norwergian</title>
-    <script type="module" src="./js/main.js"></script>
+    <title>Order Summary</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="images/logo-typ.png" type="image/x-icon">
+  <script type="module" crossorigin src="./assets/main-553307f8.js"></script>
+  <link rel="stylesheet" href="./assets/main-421f3f41.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/NORwegian.png" alt="Logo" style="height: 75px;">
+                    <img src="./assets/NORwegian-3fa9753c.png" alt="Logo" style="height: 75px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
@@ -36,10 +37,10 @@
                             <a class="nav-link" href="bassguitars.html">Bass guitars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="custom.html" aria-disabled="true">C<i>o</i>stum guitars</a>
+                            <a class="nav-link" href="custom.html" aria-disabled="true">Costum guitars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html" aria-disabled="true">Cart <i
+                            <a class="nav-link active" href="cart.html" aria-disabled="true">C<i>a</i>rt <i
                                     class="bi bi-cart"></i></a>
                         </li>
                     </ul>
@@ -48,85 +49,84 @@
         </nav>
     </header>
 
-    </section>
-    </nav>
-    </section>
-    <section class="hero-shop">
-        <div class="hero-overlay-shop">
-            <h1>C<i>o</i>stum guitars</h1>
-            <h2 class="title-h2">Craft your sound, shape your style,<br> and play without limits!</h2>
-        </div>
-    </section>
-
-
-    <section class="container my-5 py-5">
-        <div class="row align-items-center">
-    
-            <div class="col-md-6">
-                <h2 class="fw-bold text-uppercase mb-4">Crafted Uniquely for You</h2>
-                <p class="fs-5">
-                    <p>Each of our custom guitars is a true reflection of your individuality, crafted with precision and care. Using the finest materials and the timeless beauty of Norwegian wood, every guitar is tailored to bring your vision to life.</p>
-                    <p>Our custom guitars are more than just instruments; they are a work of art designed to match your unique sound and style. Whether you seek the boldness of innovation or the grace of tradition, your custom guitar will be the perfect bridge between your creativity and the spirit of the North.</p>
-                </p>
-            </div>
-    
-            <div class="col-md-6 text-center">
-                <div class="image-container">
-                    <img src="images/custom-.webp" alt="Custom Norwegian Guitar" class="img-fluid rounded shadow-sm pic">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-
-
     <section class="container">
-        <section class="products row pt-5">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
-                <div class="product-card">
-                    <p class="floki-product text-center">Git<b>a</b>rmusikkens</p>
-                    <a href="product.html"><img src="images/elgi4.jpg" alt="Guitar" class="product-image"></a>
-                    <div class="product-info">
-                        <div class="product-title">Custom Type XFDR</div>
-                        <p class="blue">Viking's Wrath</p>
-                        <div class="product-price">845 €</div>
-                        <div class="product-rating">★★★★★</div>
-                        <a href="#" class="product-button">Add to Cart</a>
+        <section class="order-summary">
+            <div class="container my-5">
+                <div class="d-flex align-items-center steps-container">
+                    <div class="d-flex align-items-center">
+                        <div class="step step-inactive">1</div>
+                        <a href="cart.html">
+                            <div class="step-title">Cart</div>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="step step-inactive">2</div>
+                        <a href="Shipping&Payment.html">
+                            <div class="step-title">Shipping & Payment</div>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="step step-inactive">3</div>
+                        <a href="DeliveryDetails.html">
+                            <div class="step-title">Delivery Details</div>
+                        </a>
+                    </div>
+                    <div class="step-line"></div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="step step-active">4</div>
+                        <a href="OrderSummary.html">
+                            <div class="step-title">Order Summary</div>
+                        </a>
                     </div>
                 </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
-                <div class="product-card">
-                    <p class="floki-product text-center">Git<b>a</b>rmusikkens</p>
-                    <a href="product.html"><img src="images/elgi4.jpg" alt="Guitar" class="product-image"></a>
-                    <div class="product-info">
-                        <div class="product-title">Custom Type CHJK</div>
-                        <p class="blue">Ironclad Fury</p>
-                        <div class="product-price">1 840 €</div>
-                        <div class="product-rating">★★★★★</div>
-                        <a href="#" class="product-button">Add to Cart</a>
+
+                <div class="order-details mt-4">
+                    <h3 class="mb-3">Order Summary</h3>
+                    <div class="order-item">
+                        <div class="d-flex justify-content-between">
+                            <div>Electric Guitar Model X</div>
+                            <div>€450</div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="d-flex justify-content-between">
+                            <div>Bass Guitar Model Y</div>
+                            <div>€550</div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="d-flex justify-content-between">
+                            <div>Shipping</div>
+                            <div>€100</div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="d-flex justify-content-between">
+                            <div>Discount</div>
+                            <div>-€50</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <p><strong>Total without VAT:</strong> €1784</p>
+                        <h4 class="text-success"><strong>Total with VAT:</strong> €1900</h4>
+                    </div>
+
+                    <div class="text-end mt-4">
+                        <a href="Shipping&Payment.html">
+                            <button type="button" class="btn btn-success">Confirm Order &rarr;</button>
+                        </a>
                     </div>
                 </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
-                <div class="product-card">
-                    <p class="floki-product text-center">Git<b>a</b>rmusikkens</p>
-                    <a href="product.html"><img src="images/elgi4.jpg" alt="Guitar" class="product-image"></a>
-                    <div class="product-info">
-                        <div class="product-title">Custom Type DQOU</div>
-                        <p class="blue">Lunar Surge</p>
-                        <div class="product-price">12 140 €</div>
-                        <div class="product-rating">★★★★★</div>
-                        <a href="#" class="product-button">Add to Cart</a>
-                    </div>
-                </div>
-                </a>
             </div>
         </section>
     </section>
+
     <footer>
         <div class="line"></div>
         <div class="container justify-content-center text-center d-flex pt-4">
@@ -168,3 +168,4 @@
         <div class="line"></div>
     </footer>
 </body>
+</html>

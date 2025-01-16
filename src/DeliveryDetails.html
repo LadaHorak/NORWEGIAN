@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,100 +51,120 @@
         <section class="delivery-details">
             <div class="container my-5">
                 <div class="d-flex align-items-center steps-container">
-                    <div class="d-flex align-items-center">
-                        <div class="step step-inactive">1</div>
-                        <a href="cart.html">
-                            <div class="step-title">Cart</div>
-                        </a>
-                    </div>
-                    <div class="step-line"></div>
-
-                    <div class="d-flex align-items-center">
-                        <div class="step step-inactive">2</div>
-                        <a href="Shipping&Payment.html">
-                            <div class="step-title">Shipping & Payment</div>
-                        </a>
-                    </div>
-                    <div class="step-line"></div>
-
-                    <div class="d-flex align-items-center">
-                        <div class="step step-active">3</div>
-                        <a href="DeliveryDetails.html">
-                            <div class="step-title">Delivery Details</div>
-                        </a>
-                    </div>
-                    <div class="step-line"></div>
-
-                    <div class="d-flex align-items-center">
-                        <div class="step step-inactive">4</div>
-                        <a href="OrderSummary.html">
-                            <div class="step-title">Order Summary</div>
-                        </a>
-                    </div>
-                </div>
-
-                <h2 class="my-4">Enter Your Delivery Details</h2>
-                <form action="#" method="POST">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="example@mail.com" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label">Delivery Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="Street, City, Country" required>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="postalCode" class="form-label">Postal Code</label>
-                                <input type="text" class="form-control" id="postalCode" placeholder="12345" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" id="phone" placeholder="+1234567890" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="note" class="form-label">Special Delivery Notes</label>
-                        <textarea class="form-control" id="note" rows="3" placeholder="Any specific instructions for delivery?" required></textarea>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <a href="#" class="discount-link pt-2">
-                                <i class="bi bi-arrow-right-circle"></i> Use Discount / Gift Voucher
+                    <a href="cart.html">
+                        <div class="d-flex align-items-center">
+                            <div class="step step-inactive">1</div>
+                            <a href="cart.html">
+                                <div class="step-title">Cart</div>
                             </a>
-                            <div class="back-button pt-4">
-                                <button type="button" class="btn btn-light">
-                                    <i class="bi bi-arrow-left"></i> Back to Shopping
-                                </button>
+                        </div>
+                    </a>
+
+
+                    <div class="step-line"></div>
+                    <a href="Shipping&Payment.html">
+                        <div class="d-flex align-items-center">
+                            <div class="step step-inactive">2</div>
+                            <a href="Shipping&Payment.html">
+                                <div class="step-title">Shipping & Payment</div>
+                            </a>
+                        </div>
+                    </a>
+                    <div class="step-line"></div>
+
+                    <a href="DeliveryDetails.html">
+                        <div class="d-flex align-items-center">
+                            <div class="step step-active">3</div>
+                            <a href="DeliveryDetails.html">
+                                <div class="step-title">Delivery Details</div>
+                            </a>
+                        </div>
+                    </a>
+
+                    <div class="step-line"></div>
+
+                    <a href="OrderSummary.html">
+                        <div class="d-flex align-items-center">
+                            <div class="step step-inactive">4</div>
+                            <a href="OrderSummary.html">
+                                <div class="step-title">Order Summary</div>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="container-cart">
+                    <h2 class="my-4">Enter Your Delivery Details</h2>
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="John Doe"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="example@mail.com"
+                                        required>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="text-end pt-2 pb-3">
-                            <p class="mb-0">Total without VAT: <strong>1784 €</strong></p>
-                            <h4 class="text-success mb-0">To Pay with VAT: 1900 €</h4>
-                            <a href="Shipping&Payment.html"><button type="button" class="btn btn-success mt-2">Continue
-                                    &rarr;</button></a>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Delivery Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Street, City, Country"
+                                required>
                         </div>
-                    </div>
-                </form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="postalCode" class="form-label">Postal Code</label>
+                                    <input type="text" class="form-control" id="postalCode" placeholder="12345"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="+1234567890"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="note" class="form-label">Special Delivery Notes</label>
+                            <textarea class="form-control" id="note" rows="3"
+                                placeholder="Any specific instructions for delivery?" required></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="discount-link pt-2">
+                                    <i class="bi bi-arrow-right-circle"></i> Use Discount / Gift Voucher
+                                </a>
+                                <div class="back-button pt-4">
+                                    <button type="button" class="btn btn-light">
+                                        <i class="bi bi-arrow-left"></i> Back to Shopping
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="text-end pt-2 pb-3">
+                                <p class="mb-0">Total without VAT: <strong>1784 €</strong></p>
+                                <h4 class="text-success mb-0">To Pay with VAT: 1900 €</h4>
+                                <a href="Shipping&Payment.html"><button type="button"
+                                        class="btn btn-success mt-2">Continue
+                                        &rarr;</button></a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </section>
     </section>
+
 
     <footer>
         <div class="line"></div>
@@ -186,4 +207,5 @@
         <div class="line"></div>
     </footer>
 </body>
+
 </html>

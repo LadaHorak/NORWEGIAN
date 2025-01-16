@@ -1,52 +1,57 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Norwergian</title>
+    <title>Delivery Details</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script type="module" crossorigin src="./assets/main-f709d986.js"></script>
-  <link rel="stylesheet" href="./assets/main-227b3104.css">
+  <script type="module" crossorigin src="./assets/main-553307f8.js"></script>
+  <link rel="stylesheet" href="./assets/main-421f3f41.css">
 </head>
 
 <body>
-    <section class="container">
-        <nav>
-            <section class="navbar display-flex align-items-center">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./assets/NORwegian-3fa9753c.png" alt="Logo" style="height: 75px;">
-                    </a>
-                </div>
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="electricguitars.html">Electric guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="bassguitars.html">Bass guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="custom.html" aria-disabled="true">Costum guitars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="cart.html" aria-disabled="true">C<i>a</i>rt <i
-                                class="bi bi-cart"></i></a>
-                    </li>
-                </ul>
-            </section>
-        </nav>
-    </section>
-    <section class="container">
-        <section class="cart">
-            <div class="container my-5">
-                <div class="d-flex align-items-center">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/NORwegian-3fa9753c.png" alt="Logo" style="height: 75px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="color: white; border-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse nav nav-underline" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="electricguitars.html">Electric guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bassguitars.html">Bass guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="custom.html" aria-disabled="true">Costum guitars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cart.html" aria-disabled="true">C<i>a</i>rt <i
+                                    class="bi bi-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container ">
+        <section class="delivery-details">
+            <div class="container my-5">
+                <div class="d-flex align-items-center steps-container">
                     <div class="d-flex align-items-center">
                         <div class="step step-inactive">1</div>
                         <a href="cart.html">
@@ -65,38 +70,83 @@
 
                     <div class="d-flex align-items-center">
                         <div class="step step-active">3</div>
-                        <a href="#">
+                        <a href="DeliveryDetails.html">
                             <div class="step-title">Delivery Details</div>
                         </a>
                     </div>
+                    <div class="step-line"></div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="step step-inactive">4</div>
+                        <a href="OrderSummary.html">
+                            <div class="step-title">Order Summary</div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="d-flex justify-content-between align-items-center">
-           
-                    <div>
-                        <a href="#" class="discount-link pt-2">
-                            <i class="bi bi-arrow-right-circle"></i> Use Discount / Gift Voucher
-                        </a>
-                        <div class="back-button pt-4">
-                            <button type="button" class="btn btn-light">
-                                <i class="bi bi-arrow-left"></i> Back to Shopping
-                            </button>
+                <h2 class="my-4">Enter Your Delivery Details</h2>
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@mail.com" required>
+                            </div>
                         </div>
                     </div>
-                    
-        
-                    <div class="text-end">
-                        <p class="mb-0">Total without VAT: <strong>984 €</strong></p>
-                        <h4 class="text-success mb-0">To Pay with VAT: 1200 €</h4>
-                        <a href="Shipping&Payment.html"><button type="button" class="btn btn-success mt-2">Continue &rarr;</button></a>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Delivery Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Street, City, Country" required>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="postalCode" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="postalCode" placeholder="12345" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="+1234567890" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="note" class="form-label">Special Delivery Notes</label>
+                        <textarea class="form-control" id="note" rows="3" placeholder="Any specific instructions for delivery?" required></textarea>
+                    </div>
 
-                
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <a href="#" class="discount-link pt-2">
+                                <i class="bi bi-arrow-right-circle"></i> Use Discount / Gift Voucher
+                            </a>
+                            <div class="back-button pt-4">
+                                <button type="button" class="btn btn-light">
+                                    <i class="bi bi-arrow-left"></i> Back to Shopping
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="text-end pt-2 pb-3">
+                            <p class="mb-0">Total without VAT: <strong>1784 €</strong></p>
+                            <h4 class="text-success mb-0">To Pay with VAT: 1900 €</h4>
+                            <a href="Shipping&Payment.html"><button type="button" class="btn btn-success mt-2">Continue
+                                    &rarr;</button></a>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div>
         </section>
     </section>
+
     <footer>
         <div class="line"></div>
         <div class="container justify-content-center text-center d-flex pt-4">
@@ -138,3 +188,4 @@
         <div class="line"></div>
     </footer>
 </body>
+</html>
